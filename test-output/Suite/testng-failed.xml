@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]">
+  <parameter name="driverPath" value="src/test/resources/geckodriver.exe"/>
+  <parameter name="seleniumVersion" value="2.x"/>
+  <parameter name="browserType" value="Firefox"/>
+  <test name="注册(failed)">
+    <classes>
+      <class name="testcase.Register_Tester_Case_1">
+        <methods>
+          <include name="test_case_2" invocation-numbers="0"/>
+          <include name="beforSuite"/>
+          <include name="afterSuit"/>
+        </methods>
+      </class> <!-- testcase.Register_Tester_Case_1 -->
+    </classes>
+  </test> <!-- 注册(failed) -->
+</suite> <!-- Failed suite [Suite] -->

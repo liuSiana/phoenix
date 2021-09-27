@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="false">
+  <test name="register">
+    <classes>
+  		 <class name="testcase.Register_Tester_Case_1"/>
+    </classes>
+  </test> 
+  <!-- 对打开浏览器的测试进行参数化设置 -->
+  <!-- 
+      浏览器类型：IE,Firefox,Chrome
+   selenium版本：2.x，3.x
+      驱动文件的存放地址：
+  	IE:         src/test/resources/IEDriverServer.exe
+  	Firefox：       src/test/resources/geckodriver.exe
+  	Chrome：         src/test/resources/chromedriver.exe
+   -->
+  <parameter name="browserType" value="Firefox"></parameter>
+  <parameter name="seleniumVersion" value="2.x"></parameter>
+  <parameter name="driverPath" value="src/test/resources/geckodriver.exe"></parameter>
+   <listeners>
+  	<listener class-name="org.uncommons.reportng.HTMLReporter"></listener>
+  	<listener class-name="listener.PhoenixListener"></listener>
+  </listeners>
+</suite>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pages>
+<!-- 通过反射的方式获取类名，所以将此处的页面名车设置为类名，方便维护 -->
+	<page name="testcase.Register_Tester_Case_1">
+		<locator by="id" value="mobilephone" desc="手机号码输入框"></locator>
+		<locator by="id" value="password" desc="密码输入框"></locator>
+		<locator by="id" value="pwdconfirm" desc="确认密码输入框"></locator>
+		<locator by="id" value="verifycode" desc="验证码输入框"></locator>
+		<locator by="id" value="signup-button" desc="注册按钮"></locator>
+		<locator by="className" value="tips" desc="提示信息"></locator>
+	</page>
+	<page name="testcase.LoginTester">
+		<locator by="id" value="mobilephone" desc="手机号码输入框"></locator>
+		<locator by="id" value="password" desc="密码输入框"></locator>
+		<locator by="id" value="login" desc="登录按钮"></locator>
+		<locator by="name" value="reset" desc="重置按钮"></locator>
+	</page>
+</pages>
